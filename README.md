@@ -1,0 +1,2 @@
+# pythonTrainning
+此项目用来记录平时学习python时的练手代码
