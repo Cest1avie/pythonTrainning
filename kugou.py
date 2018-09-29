@@ -34,4 +34,4 @@ if __name__ == '__main__':
     for i in range(0,23):
         url = 'http://www.kugou.com/yy/rank/home/{0}-8888.html?from=rank'.format(i+1)
         get_info(url)
-        time.sleep(2) #请求一次休息两秒 
+        time.sleep(2) #请求一次休息两秒 防止被禁止访问
