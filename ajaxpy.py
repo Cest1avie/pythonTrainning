@@ -28,6 +28,6 @@ for photoSrc in photos:
     photoName = re.findall(r'/photos/(\d+)/pexels', photoSrc)
     print(photoName)
     if photoName:
-        fp = open(path + photoName[0] +'.jpeg', 'wb')
+        fp = open(path + photoName[0] +'.jpeg', 'wb') 
         fp.write(data.content)
         fp.close()
