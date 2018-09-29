@@ -31,7 +31,7 @@ if __name__ == '__main__':
     print('串行性爬虫耗时：',end1-start1)
 
     start2 = time.time()
-    pool = Pool(processes=2)
+    pool = Pool(processes=2) #构建两个进程
     pool.map(re_scraper, urls)
     end2 = time.time()
     print('2进程爬虫耗时：', end2 - start2)
