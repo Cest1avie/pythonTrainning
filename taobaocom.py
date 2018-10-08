@@ -12,13 +12,13 @@ if __name__ == '__main__':
     driver.find_element_by_id('J_Quick2Static').click()
     driver.find_element_by_id('TPL_username_1').clear()
     time.sleep(1)
-    driver.find_element_by_id('TPL_username_1').send_keys('15926488894')
+    driver.find_element_by_id('TPL_username_1').send_keys('账号')
     time.sleep(2)
-    driver.find_element_by_id('TPL_password_1').send_keys('hustfz23.')
+    driver.find_element_by_id('TPL_password_1').send_keys('密码')
     driver.find_element_by_id('J_SubmitStatic').click()
     # 需要滑块，再次登录，先输入密码，再滑动滑块
     driver.find_element_by_id("TPL_password_1").click()
-    driver.find_element_by_id("TPL_password_1").send_keys('hustfz23.')
+    driver.find_element_by_id("TPL_password_1").send_keys('密码')
     time.sleep(1)
     dragger = driver.find_element_by_id('nc_1_n1z')  # .滑块定位
     action = ActionChains(driver)
@@ -31,10 +31,3 @@ if __name__ == '__main__':
 
     driver.find_element_by_id('J_SubmitStatic').click()  # 重新摁登录摁扭
 
-
-
-
-    # driver.find_element_by_id('q').clear()
-    # driver.find_element_by_id('q').send_keys('高跟鞋')
-    # driver.find_element_by_class_name('btn-search').click()
-    # get_info(driver.current_url,1)
