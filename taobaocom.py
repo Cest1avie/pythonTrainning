@@ -17,7 +17,7 @@ if __name__ == '__main__':
     driver.find_element_by_id('TPL_password_1').send_keys('密码')
     driver.find_element_by_id('J_SubmitStatic').click()
     # 需要滑块，再次登录，先输入密码，再滑动滑块
-    driver.find_element_by_id("TPL_password_1").click()
+    driver.find_element_by_id("TPL_password_1").click() 
     driver.find_element_by_id("TPL_password_1").send_keys('密码')
     time.sleep(1)
     dragger = driver.find_element_by_id('nc_1_n1z')  # .滑块定位
